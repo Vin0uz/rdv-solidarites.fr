@@ -32,3 +32,4 @@ fr:
           relative: "Proche"
         notify_by_sms: "Notifications par SMS"
         notify_by_email: "Notifications par email"
+        created_through: "Origine du compte"

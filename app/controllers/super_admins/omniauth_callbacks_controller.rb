@@ -15,6 +15,7 @@ module SuperAdmins
     end
 
     def failure
+      flash[:error] = "Erreur: #{params[:error]} - #{params[:error_description]}"
       redirect_to root_path
     end
   end

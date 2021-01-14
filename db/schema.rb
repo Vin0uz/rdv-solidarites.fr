@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_07_091426) do
+ActiveRecord::Schema.define(version: 2021_01_14_143145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -356,6 +356,8 @@ ActiveRecord::Schema.define(version: 2021_01_07_091426) do
     t.bigint "responsible_id"
     t.datetime "deleted_at"
     t.string "birth_name"
+    t.string "france_connect_openid_sub"
+    t.string "created_through"
     t.string "email_original"
     t.string "phone_number_formatted"
     t.boolean "notify_by_sms", default: true
